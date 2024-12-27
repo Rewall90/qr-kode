@@ -54,5 +54,5 @@ export const translations = {
 
   // Header
   title: 'Beste Gratis QR-kode Generator',
-  subtitle: 'Lag gratis QR-kode kunst med KI. Legg til logoer, bakgrunnsfarger, QR-kode andre former for URL, WiFi, PDF, YouTube og mer! Generer vakre, tilfeldige, skannbare design på sekunder.',
+  subtitle: 'Lag gratis QR-koder enkelt og raskt. Legg til logoer, bakgrunnsfarger og andre former. Perfekt for URL, WiFi, PDF, YouTube og mer! Generer vakre, skannbare design på sekunder.',
 };

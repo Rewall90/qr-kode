@@ -1,17 +1,17 @@
 # QR Kode Generator
 
-A modern, fast, and user-friendly QR code generator built with React and TypeScript. Create QR codes for URLs, WiFi networks, contact information, and more.
+En moderne, rask og brukervennlig QR-kode generator bygget med React og TypeScript. Lag QR-koder for nettsider, WiFi-nettverk, kontaktinformasjon og mer.
 
-## Features
+## Funksjoner
 
-- Multiple QR code types (URL, Email, Phone, SMS, WiFi, etc.)
-- Customizable colors
-- Mobile-responsive design
-- Instant QR code generation
-- Download generated QR codes
-- Norwegian language support
+- Flere QR-kode typer (URL, E-post, Telefon, SMS, WiFi, osv.)
+- Tilpassbare farger
+- Mobilresponsivt design
+- Øyeblikkelig QR-kode generering
+- Last ned genererte QR-koder
+- Norsk språk
 
-## Tech Stack
+## Teknologi
 
 - React
 - TypeScript
@@ -19,19 +19,19 @@ A modern, fast, and user-friendly QR code generator built with React and TypeScr
 - Vite
 - QRCode.js
 
-## Development
+## Utvikling
 
 ```bash
-# Install dependencies
+# Installer avhengigheter
 npm install
 
-# Start development server
+# Start utviklingsserver
 npm run dev
 
-# Build for production
+# Bygg for produksjon
 npm run build
 ```
 
-## License
+## Lisens
 
 MIT

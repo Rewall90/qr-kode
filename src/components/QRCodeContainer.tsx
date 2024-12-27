@@ -6,7 +6,6 @@ import { QRPreview } from './QRPreview';
 import { QRType } from '../types/qr';
 import { qrTypes } from '../constants/qrTypes';
 import { ColorPicker } from './ColorPicker';
-import { translations as t } from '../constants/translations';
 
 export function QRCodeContainer() {
   const [activeType, setActiveType] = useState<QRType>(qrTypes[0]);
@@ -60,18 +59,18 @@ export function QRCodeContainer() {
           disabled={!input || isGenerating}
           className="w-full bg-blue-600 text-white py-4 rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-lg font-medium"
         >
-          {isGenerating ? t.generating : t.generate}
+          {isGenerating ? 'Genererer...' : 'Lag QR-kode'}
         </button>
 
         {showColorPickers && (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 animate-fade-in">
             <ColorPicker
-              label={t.qrCodeColor}
+              label="QR-kode farge"
               color={foregroundColor}
               onChange={setForegroundColor}
             />
             <ColorPicker
-              label={t.backgroundColor}
+              label="Bakgrunnsfarge"
               color={backgroundColor}
               onChange={setBackgroundColor}
             />
