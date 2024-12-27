@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
+import QRCode from 'qrcode';
 import { Download } from 'lucide-react';
 import { QRInput } from './QRInput';
-import { useQRCode } from '../../hooks/useQRCode';
-import { QRPreview } from './QRPreview';
+import { useQRCode } from '../hooks/useQRCode';
 
 export function QRCodeGenerator() {
   const [input, setInput] = useState('');
@@ -26,7 +26,27 @@ export function QRCodeGenerator() {
             Generate QR Code
           </button>
 
-          {qrCode && <QRPreview qrCode={qrCode} />}
+          {qrCode && (
+            <div className="flex flex-col items-center space-y-4 mt-6">
+              <img
+                src={qrCode}
+                alt="Generated QR code"
+                className="w-64 h-64"
+              />
+              <button
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = qrCode;
+                  link.download = 'qrcode.png';
+                  link.click();
+                }}
+                className="inline-flex items-center gap-2 bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700"
+              >
+                <Download className="w-5 h-5" />
+                Download QR Code
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>
