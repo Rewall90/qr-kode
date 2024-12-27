@@ -8,8 +8,8 @@ export default function App() {
     <HelmetProvider>
       <div className="min-h-screen bg-gray-900">
         <Helmet>
-          <title>Beste Gratis QR Kode Generator | Create Free QR Codes</title>
-          <meta name="description" content="Generate QR codes instantly with AI. Add logos, colors, and create QR codes for URLs, WiFi, PDF, YouTube and more!" />
+          <title>Beste Gratis QR Kode Generator a | Create Free QR Codes</title>
+          <meta name="description" content="Lag QR-koder raskt med AI. Du kan legge til logoer og farger. Perfekt for nettsider, WiFi, PDF-er, YouTube og mer!" />
         </Helmet>
 
         <Header />
